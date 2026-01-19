@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>Static Website Rebuild</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
 <header class="navbar">
-    <div class="logo">Static</div>
+    <div class="logo">LOGO</div>
 
     <nav class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="primary-btn">Contact</a>
     </nav>
 
-    <div class="hamburger" id="hamburger">☰</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
 </header>
 
 
@@ -27,51 +27,56 @@
     <button>Search</button>
 </section>
 
-
+<!-- ===== Hero Section ===== -->
 <section id="home" class="hero">
     <h1>Static Site Rebuild</h1>
     <p>Frontend internship task using HTML, CSS & JavaScript</p>
 </section>
 
 
-<section id="features" class="features">
+<section id="features" class="section">
     <h2>Features</h2>
 
-    <div class="feature-card">
-        <h3>Clean UI</h3>
-        <p>Simple and structured layout design.</p>
-    </div>
+    <div class="features-container">
 
-    <div class="feature-card">
-        <h3>Responsive</h3>
-        <p>Optimized for mobile and desktop screens.</p>
-    </div>
+        <div class="feature-card">
+            <h3>Clean UI</h3>
+            <p>Simple and structured layout design.</p>
+        </div>
 
-    <div class="feature-card">
-        <h3>Reusable</h3>
-        <p>Easy to extend and customize code.</p>
+        <div class="feature-card">
+            <h3>Responsive</h3>
+            <p>Optimized for mobile and desktop screens.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Reusable</h3>
+            <p>Easy to extend and customize code.</p>
+        </div>
+
     </div>
 </section>
 
 
-<section id="contact" class="contact">
+
+<section id="contact" class="section">
     <h2>Contact Us</h2>
 
-    <input type="text" id="name" placeholder="Your Name">
-    <input type="email" id="email" placeholder="Your Email">
-    <button onclick="submitForm()">Submit</button>
-
-    <p id="formMsg"></p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Submit</button>
+    </form>
 </section>
 
 
 <footer class="footer">
-    <p>© 2026 Static Website Rebuild | Internship Task</p>
+    © 2026 Static Website Rebuild | Internship Task
 </footer>
 
-<!-- day 10  -->
-<button id="goTopBtn">Top</button>
 
-<script src="script.js"></script>
+<button id="goTop">↑</button>
+
+<script src="js/script.js"></script>
 </body>
 </html>
