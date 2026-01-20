@@ -58,6 +58,7 @@ body {
     width: 200px;
 }
 
+
 .hero {
     background: #eef3f8;
     text-align: center;
@@ -80,23 +81,22 @@ body {
 }
 
 .feature-card {
-    background: #ffffff;
+    background: #fff;
     width: 85%;
     max-width: 360px;
     padding: 30px 20px;
     border-radius: 16px;
-    text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .feature-card h3 {
     margin-bottom: 10px;
-    font-size: 20px;
 }
 
-.feature-card p {
-    color: #555;
-    font-size: 15px;
+.feature-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 
@@ -132,7 +132,6 @@ form button {
 
 
 @media (max-width: 768px) {
-
     .nav-links {
         position: absolute;
         top: 65px;
@@ -142,7 +141,6 @@ form button {
         display: none;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         padding: 20px 0;
     }
 
