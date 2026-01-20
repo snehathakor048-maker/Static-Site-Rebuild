@@ -10,11 +10,7 @@ hamburger.onclick = () => {
 const goTop = document.getElementById("goTop");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        goTop.style.display = "block";
-    } else {
-        goTop.style.display = "none";
-    }
+    goTop.style.display = window.scrollY > 200 ? "block" : "none";
 });
 
 goTop.onclick = () => {
